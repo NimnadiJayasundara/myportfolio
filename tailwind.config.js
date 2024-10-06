@@ -23,12 +23,28 @@ module.exports = {
         lgl: "1024px",
         xl: "1280px",
       },
+      /*
       colors: {
         bodyColor: "#0A192F",
         textGreen: "#64ffda",
         textLight: "#ccd6f6",
         textDark: "#8892b0",
         hoverColor: "rgba(100,255,218,0.1)",
+      },
+      colors: {
+        bodyColor: "#041122",
+        textGreen: "#00f6bb",
+        textLight: "#1b3793",
+        textDark: "#8892b0",
+        hoverColor: "#1b5593",
+      },
+      */
+      colors: {
+        bodyColor: "#f4f4f5",
+        textGreen: "#ff6604",
+        textLight: "#220411",
+        textDark: "#8892b0",
+        hoverColor: "#ffc49e",
       },
       fontFamily: {
         bodyFont: ["Montserrat", "sans-serif"],

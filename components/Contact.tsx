@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { logo } from "@/public/assets";
+import Image from "next/image";
 
 const Contact = () => {
   const [form, setForm] = useState({
     name: "",
-    subject: "",
+    email: "",
     message: "",
   });
 
@@ -67,11 +69,11 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label htmlFor="subject" className="block mb-2 text-textGreen">Subject</label>
+              <label htmlFor="email" className="block mb-2 text-textGreen">Email</label>
               <input
-                type="text"
-                name="subject"
-                value={form.subject}
+                type="email"
+                name="email"
+                value={form.email}
                 onChange={handleChange}
                 className="w-full p-3 bg-transparent border border-gray-300 rounded-md hover:bg-teal-700 hover:bg-opacity-30"
               />
@@ -88,13 +90,20 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="w-full p-3 bg-teal-500 text-white font-semibold rounded-md hover:bg-teal-600 transition duration-300"
+              className="w-full p-3 bg-[#ff6604] text-white font-semibold rounded-md hover:bg-[#9e3e00] transition duration-300"
             >
               Submit
             </button>
           </form>
         </div>
+        
       </div>
+      <footer className="text-center mt-8">
+      <p>© 2024 | Hansi Nimnadi</p>
+      <div className="flex justify-center mt-4">
+        <Image className="w-64" src={logo} alt="logo" />
+      </div>
+    </footer>
     </section>
   );
 };

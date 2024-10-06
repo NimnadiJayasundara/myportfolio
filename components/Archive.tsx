@@ -1,191 +1,120 @@
 import { useState } from "react";
 import ArchiveCard from "./ArchiveCard";
-import { motion } from "framer-motion";
+import Image from "next/image";
+import company from "../public/assets/images/company.png";
+import company4 from "../public/assets/images/company4.png";
+import company5 from "../public/assets/images/company5.png";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Archive = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [showMore, setShowMore] = useState(false);
 
+  const cards = [
+    {
+      title: "Understanding Software Firm Functions",
+      des: "This involves gaining insights into their approach to developing and deploying software solutions, focusing on innovation, and addressing industry-specific needs and challenges through technology. We had the opportunity to work with Sysco Labs at Level 1.",
+      listItem: [""],
+      link: "https://",
+      image: company4,
+    },
+    {
+      title: "Collaborate with the firm during the Future Career",
+      des: "We had the valuable opportunity to collaborate with the firm during the Future Career Programme, where we engaged in various activities that enhanced our professional skills and network. This experience not only allowed us to connect with industry experts but also equipped us with insights into career development and the skills necessary for success in our future endeavors.",
+      listItem: [""],
+      link: "https://www./",
+      image: company,
+    },
+    {
+      title: "Teamwork through Volunteering at Family Aurudu",
+      des: "We had the valuable opportunity to be involved as external volunteering organizers for the Family Aurudu event at Sysco Lab. It allowed us to connect with each other, foster teamwork, and contribute to the success of the event while gaining meaningful experiences in organizing and collaboration.",
+      listItem: [""],
+      link: "https://",
+      image: company5,
+    },
+    /*
+    {
+      title: "OREBI e-commerce Shopping store",
+      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium velit qui sint non, voluptates quo a veritatis.",
+      listItem: ["Reactjs", "Tailwind CSS", "getform.io"],
+      link: "https://orebishopping.reactbd.com/",
+      image: company,
+    },
+    {
+      title: "Noor Online Shopping Store",
+      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium velit qui sint non, voluptates quo a veritatis.",
+      listItem: ["Reactjs", "Tailwind CSS", "redux-toolkit"],
+      link: "https://",
+      image: company,
+    },
+    {
+      title: "Personalized Blog",
+      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium velit qui sint non, voluptates quo a veritatis.",
+      listItem: ["Nextjs", "Tailwind CSS", "next-auth", "firebase"],
+      link: "https://",
+      image: company,
+    },*/
+  ];
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? cards.length - 1 : prevIndex - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === cards.length - 1 ? 0 : prevIndex + 1));
+  };
+
   return (
-    <div className="max-w-contentContainer mx-auto px-4 py-24">
+    <div className="max-w-contentContainer mx-auto px-4 py-">
       <div className="w-full flex flex-col items-center">
         <h2 className="text-3xl font-titleFont font-semibold">
           Other Noteworthy Activities
         </h2>
-        <p className="text-sm font-titleFont text-textGreen">
-          view the archive
-        </p>
+        
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10">
-        <ArchiveCard
-          title="Understanding Software Firm Functions"
-          des=" 
-          This includes understanding their approach to developing and 
-          deploying software solutions, their focus on innovation, and 
-          how they address industry-specific needs and challenges through technology."
-          listItem={[""]}
-          link="https://www.educareenglishlearningacademy.com/"
-        />
-        <ArchiveCard
-          title="Cyber Security Blog with live comments section"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://www.noormohmmad.com/"
-        />
-        <ArchiveCard
-          title="ReactBD web development company"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://reactbd.com/"
-        />
-        {/*
-        <ArchiveCard
-          title="Amazon Clone with login, cart-option and payment intrigation."
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://amazonclone.reactbd.com/"
-        />
-        <ArchiveCard
-          title="JSON data (example data api for test projects)"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Nextjs", "Tailwind CSS", "next-router"]}
-          link="https://jsondata.reactbd.com/"
-        />
-        <ArchiveCard
-          title="Dynamic Responsive Portfolio"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://portfolioone.reactbd.com/"
-        />
-*/}
-        {showMore && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.1 }}
-            >
-              <ArchiveCard
-                title="OREBI e-commerce Shopping store"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-                link="https://orebishopping.reactbd.com/"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-            >
-              <ArchiveCard
-                title="Noor Online Shopping Store"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "redux-toolkit"]}
-                link="https://noorshop.netlify.app/"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-            >
-              <ArchiveCard
-                title="Personalized Blog"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Nextjs", "Tailwind CSS", "next-auth", "firebase"]}
-                link="https://my-blog-delta-eight.vercel.app/"
-              />
-            </motion.div>
-            {/*
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-            >
-              <ArchiveCard
-                title="Shoppers Online Shopping Market"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Nextjs", "react-slick", "redux-toolkit"]}
-                link="https://shoppersyt.vercel.app/"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-            >
-              <ArchiveCard
-                title="Single Page Personalized Portfolio"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "vercel deploy"]}
-                link="https://portfoliotwo.reactbd.com/"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
-            >
-              <ArchiveCard
-                title="Nextjs Dynamic Portfolio"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "vercel deploy"]}
-                link="https://portfoliothree.reactbd.com/"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-            >
-              <ArchiveCard
-                title="Bazaar - A Modern Shopping app"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "vercel deploy"]}
-                link="https://bazar.reactbd.com/"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.8 }}
-            >
-              <ArchiveCard
-                title="Blog101 Application"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Nextjs", "Tailwind CSS", "next-auth"]}
-                link="https://blog101.reactbd.com/"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.9 }}
-            >
-              <ArchiveCard
-                title="Todo application"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "vercel deploy"]}
-                link="https://youtubetodo.vercel.app/"
-              />
-            </motion.div>
-            */}
-          </>
-        )}
+      <div className="relative w-full mt-16">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+            className="w-full"
+          >
+            <ArchiveCard
+              title={cards[currentIndex].title}
+              des={cards[currentIndex].des}
+              listItem={cards[currentIndex].listItem}
+              link={cards[currentIndex].link}
+              image={cards[currentIndex].image}
+            />
+          </motion.div>
+        </AnimatePresence>
+        <div className="absolute top-1/2 transform -translate-y-1/2 left-16">
+          <button onClick={handlePrev} className="p-2 bg-[#f4f4f5] rounded-full hover:bg-gray-700 transition">
+            <FaArrowLeft className="text-textGreen" />
+          </button>
+        </div>
+        <div className="absolute top-1/2 transform -translate-y-1/2 right-16">
+          <button onClick={handleNext} className="p-2 bg-[#f4f4f5] rounded-full hover:bg-gray-700 transition">
+            <FaArrowRight className="text-textGreen" />
+          </button>
+        </div>
       </div>
+      <div className="flex justify-center mt-4">
+        {cards.map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-3 mx-1 rounded-full ${
+              index === currentIndex ? "bg-textGreen" : "bg-gray-400"
+            }`}
+          />
+        ))}
+      </div>
+    
+      {/* Uncomment this section if you want to use the Show More/Show Less functionality
       <div className="mt-12 flex items-center justify-center">
         {showMore ? (
           <button
@@ -203,6 +132,7 @@ const Archive = () => {
           </button>
         )}
       </div>
+      */}
     </div>
   );
 };
