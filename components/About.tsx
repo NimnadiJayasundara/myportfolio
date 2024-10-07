@@ -13,7 +13,7 @@ const About = () => {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
-            Hi, I'm Hansi Nimnadi, an undergraduate at the{" "}	  
+            Hi, I&apos;m Hansi Nimnadi, an undergraduate at the{" "}	  
             <span className="text-textGreen">
             Faculty of Information Technology, University of Moratuwa. 
             </span> 
@@ -25,7 +25,7 @@ const About = () => {
             {" "} that provide intuitive and seamless user experiences. 
           </p>
           <p>
-          I’m also experienced in {" "}
+          I&apos;m also experienced in {" "}
           <span className="text-textGreen"> 
           project management
           </span>
