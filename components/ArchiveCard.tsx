@@ -1,5 +1,5 @@
-import { FaRegFolder } from "react-icons/fa";
-import { RxOpenInNewWindow } from "react-icons/rx";
+//import { FaRegFolder } from "react-icons/fa";
+//import { RxOpenInNewWindow } from "react-icons/rx";
 import Image, { StaticImageData } from "next/image";
 
 interface Props {

@@ -2,7 +2,6 @@ import About from "@/components/About";
 import Banner from "@/components/Banner";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
-import Footer from "@/components/Footer";
 import LeftSide from "@/components/LeftSide";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -39,7 +38,7 @@ export default function Home() {
             <Projects /> 
             <Archive />
             <Contact />
-            <Footer /> 
+            
           </div>
           <motion.div
             initial={{ opacity: 0 }}
