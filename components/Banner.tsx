@@ -59,7 +59,7 @@ const Banner = () => {
         animate={{ scale: 1.2, opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut", repeat: Infinity, repeatDelay: 1.5 }}
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute right-40 top-20 text-textGreen"
+        className="absolute right-40 top-20 text-textGreen w-16 h-20 opacity-100 sm:w-8 sm:h-12 sm:opacity-50 sm:right-8 sm:top-8"
         width="80"
         height="80"
         viewBox="0 0 64 64"
@@ -80,7 +80,7 @@ const Banner = () => {
         animate={{ scale: 1.2, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeInOut", repeat: Infinity, repeatDelay: 2 }}
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute right-60 top-60 text-textGreen"
+        className="absolute right-60 top-60 text-textGreen w-16 h-16 opacity-100 sm:w-8 sm:h-12 sm:opacity-50 sm:right-8 sm:top-24"
         width="80"
         height="80"
         viewBox="0 0 64 64"
@@ -100,7 +100,7 @@ const Banner = () => {
         animate={{ scale: 1.2, opacity: 1 }}
         transition={{ duration: 1.4, ease: "easeInOut", repeat: Infinity, repeatDelay: 2.5 }}
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute right-40 bottom-40 text-textGreen"
+        className="absolute right-40 bottom-40 text-textGreen w-16 h-20 opacity-100 sm:w-8 sm:h-12 sm:opacity-50 sm:right-8 sm:top-30"
         width="80"
         height="80"
         viewBox="0 0 64 64"
@@ -118,26 +118,24 @@ const Banner = () => {
       </motion.svg>
 
       <motion.svg
-  initial={{ scale: 0.5, opacity: 0 }}
-  animate={{ scale: 1.2, opacity: 1 }}
-  transition={{ duration: 2.2, ease: "easeInOut", repeat: Infinity, repeatDelay: 4.5 }}
-  xmlns="http://www.w3.org/2000/svg"
-  className="absolute right-0 bottom-20 text-textGreen"
-  width="80"
-  height="80"
-  viewBox="0 0 64 64"
-  fill="none"
-  stroke="currentColor"
-  strokeWidth="2"
-  strokeLinecap="round"
-  strokeLinejoin="round"
->
-  <rect x="4" y="20" width="56" height="24" rx="2" ry="2"></rect>
-  <line x1="8" y1="32" x2="56" y2="32"></line>
-  <line x1="16" y1="36" x2="24" y2="36"></line>
-  <line x1="28" y1="36" x2="36" y2="36"></line>
-  <line x1="40" y1="36" x2="48" y2="36"></line>
-</motion.svg>
+        initial={{ scale: 0.5, opacity: 0 }}
+        animate={{ scale: 1.2, opacity: 1 }}
+        transition={{ duration: 2.2, ease: "easeInOut", repeat: Infinity, repeatDelay: 4.5 }}
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute right-0 bottom-20 text-textGreen w-20 h-20 opacity-100 sm:w-8 sm:h-12 sm:opacity-50 sm:right-8 sm:top-30"
+        viewBox="0 0 64 64"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <rect x="4" y="20" width="56" height="24" rx="2" ry="2"></rect>
+        <line x1="8" y1="32" x2="56" y2="32"></line>
+        <line x1="16" y1="36" x2="24" y2="36"></line>
+        <line x1="28" y1="36" x2="36" y2="36"></line>
+        <line x1="40" y1="36" x2="48" y2="36"></line>
+      </motion.svg>
 
 
       {/* Database Icon */}
@@ -146,7 +144,7 @@ const Banner = () => {
         animate={{ scale: 1.2, opacity: 1 }}
         transition={{ duration: 1.8, ease: "easeInOut", repeat: Infinity, repeatDelay: 3.5 }}
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute right-0 top-60 text-textGreen"
+        className="absolute right-0 top-60 text-textGreen w-20 h-20 opacity-100 sm:w-8 sm:h-12 sm:opacity-50 sm:right-8 sm:top-40"
         width="80"
         height="80"
         viewBox="0 0 64 64"
