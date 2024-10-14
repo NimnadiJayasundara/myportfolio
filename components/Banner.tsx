@@ -59,9 +59,7 @@ const Banner = () => {
         animate={{ scale: 1.2, opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut", repeat: Infinity, repeatDelay: 1.5 }}
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute right-40 top-20 text-textGreen w-16 h-20 opacity-100 sm:w-8 sm:h-12 sm:opacity-50 sm:right-8 sm:top-8"
-        width="80"
-        height="80"
+        className="absolute right-0 top-60 w-20 h-20 sm:right-20 sm:top-16 sm:w-10 sm:h-72 md:w-10 md:h-8 lg:w-20 lg:h-20 text-textGreen"
         viewBox="0 0 64 64"
         fill="none"
         stroke="currentColor"
@@ -80,9 +78,7 @@ const Banner = () => {
         animate={{ scale: 1.2, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeInOut", repeat: Infinity, repeatDelay: 2 }}
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute right-60 top-60 text-textGreen w-16 h-16 opacity-100 sm:w-8 sm:h-12 sm:opacity-50 sm:right-8 sm:top-24"
-        width="80"
-        height="80"
+        className="absolute right-0 top-60 w-20 h-20 sm:right-52 sm:top-30 sm:w-12 sm:h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 text-textGreen"
         viewBox="0 0 64 64"
         fill="none"
         stroke="currentColor"
@@ -100,9 +96,7 @@ const Banner = () => {
         animate={{ scale: 1.2, opacity: 1 }}
         transition={{ duration: 1.4, ease: "easeInOut", repeat: Infinity, repeatDelay: 2.5 }}
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute right-40 bottom-40 text-textGreen w-16 h-20 opacity-100 sm:w-8 sm:h-12 sm:opacity-50 sm:right-8 sm:top-30"
-        width="80"
-        height="80"
+        className="absolute right-0 bottom-40 w-20 h-20 sm:right-42 sm:bottom-0 sm:w-12 sm:h-32 md:w-16 md:h-16 lg:w-20 lg:h-20 text-textGreen"
         viewBox="0 0 64 64"
         fill="none"
         stroke="currentColor"
@@ -122,7 +116,7 @@ const Banner = () => {
         animate={{ scale: 1.2, opacity: 1 }}
         transition={{ duration: 2.2, ease: "easeInOut", repeat: Infinity, repeatDelay: 4.5 }}
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute right-0 bottom-20 text-textGreen w-20 h-20 opacity-100 sm:w-8 sm:h-12 sm:opacity-50 sm:right-8 sm:top-30"
+        className="absolute right-0 bottom-20 w-20 h-20 sm:right-36 sm:bottom-30 sm:w-12 sm:h-18 md:w-12 md:h-12 lg:w-20 lg:h-20 text-textGreen"
         viewBox="0 0 64 64"
         fill="none"
         stroke="currentColor"
@@ -144,9 +138,7 @@ const Banner = () => {
         animate={{ scale: 1.2, opacity: 1 }}
         transition={{ duration: 1.8, ease: "easeInOut", repeat: Infinity, repeatDelay: 3.5 }}
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute right-0 top-60 text-textGreen w-20 h-20 opacity-100 sm:w-8 sm:h-12 sm:opacity-50 sm:right-8 sm:top-40"
-        width="80"
-        height="80"
+        className="absolute right-0 top-60 w-20 h-20 sm:right-0 sm:top-72 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 text-textGreen"
         viewBox="0 0 64 64"
         fill="none"
         stroke="currentColor"
