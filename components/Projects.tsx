@@ -3,6 +3,7 @@
 import { interfaceImg, interface2Img, interface3Img } from "@/public/assets";
 import Image from "next/image";
 import { AiOutlineYoutube } from "react-icons/ai";
+import { TbBrandFigma } from "react-icons/tb";
 import { TbBrandGithub } from "react-icons/tb";
 import SectionTitle from "./SectionTitle";
 import { RxOpenInNewWindow } from "react-icons/rx";
@@ -98,6 +99,14 @@ const Projects = () => {
               <li>Vercel Deployment</li>
             </ul>
             <div className="text-2xl flex gap-4">
+            <a
+              className="hover:text-textGreen duration-300"
+              href="https://www.figma.com/design/35kyOOAFwO2jntVk6MxuE6/RoamSphere?node-id=0-1&node-type=canvas&t=WInrdhEGD0BHynV5-0" // Replace with actual Figma link
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TbBrandFigma />
+            </a>
               <a
                 className="hover:text-textGreen duration-300"
                 href="https://github.com/NimnadiJayasundara" // Replace with actual GitHub link
