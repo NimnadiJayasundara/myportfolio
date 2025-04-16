@@ -33,28 +33,6 @@ const Archive = () => {
       link: "https://",
       image: company5,
     },
-    /*
-    {
-      title: "OREBI e-commerce Shopping store",
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium velit qui sint non, voluptates quo a veritatis.",
-      listItem: ["Reactjs", "Tailwind CSS", "getform.io"],
-      link: "https://orebishopping.reactbd.com/",
-      image: company,
-    },
-    {
-      title: "Noor Online Shopping Store",
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium velit qui sint non, voluptates quo a veritatis.",
-      listItem: ["Reactjs", "Tailwind CSS", "redux-toolkit"],
-      link: "https://",
-      image: company,
-    },
-    {
-      title: "Personalized Blog",
-      des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium velit qui sint non, voluptates quo a veritatis.",
-      listItem: ["Nextjs", "Tailwind CSS", "next-auth", "firebase"],
-      link: "https://",
-      image: company,
-    },*/
   ];
 
   const handlePrev = () => {
@@ -114,25 +92,6 @@ const Archive = () => {
         ))}
       </div>
     
-      {/* Uncomment this section if you want to use the Show More/Show Less functionality
-      <div className="mt-12 flex items-center justify-center">
-        {showMore ? (
-          <button
-            onClick={() => setShowMore(false)}
-            className="w-36 h-12 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
-          >
-            Show Less
-          </button>
-        ) : (
-          <button
-            onClick={() => setShowMore(true)}
-            className="w-36 h-12 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
-          >
-            Show More
-          </button>
-        )}
-      </div>
-      */}
     </div>
   );
 };

@@ -109,7 +109,15 @@ const Projects = () => {
             </a>
               <a
                 className="hover:text-textGreen duration-300"
-                href="https://github.com/NimnadiJayasundara" // Replace with actual GitHub link
+                href="https://github.com/NimnadiJayasundara/Roamsphere-client" // Replace with actual GitHub link
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TbBrandGithub />
+              </a>
+              <a
+                className="hover:text-textGreen duration-300"
+                href="https://github.com/NimnadiJayasundara/Roamsphere-server" // Replace with actual GitHub link
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -183,7 +191,7 @@ const Projects = () => {
             <div className="text-2xl flex gap-4">
               <a
                 className="hover:text-textGreen duration-300"
-                href="https://github.com/Tharusha-2000/InternManagementSystemFrontend-using-MERN-stack" // Replace with actual GitHub link
+                href="https://github.com/Tharusha-2000/InternManagementSystemFrontend-using-MERN-stack" 
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -191,7 +199,15 @@ const Projects = () => {
               </a>
               <a
                 className="hover:text-textGreen duration-300"
-                href="https://imsfrontend.vercel.app/" // Replace with actual live project link
+                href="https://github.com/Tharusha-2000/InternManagementSystemBackend-using-MERN-stack" 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TbBrandGithub />
+              </a>
+              <a
+                className="hover:text-textGreen duration-300"
+                href="https://imsfrontend.vercel.app/" 
                 target="_blank"
                 rel="noopener noreferrer"
               >

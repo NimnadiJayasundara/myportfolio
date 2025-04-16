@@ -15,7 +15,7 @@ const Footer = () => {
         </span>
       </a>
       <a
-        href="https://www.youtube.com/@nimnadihansi"
+        href="https://www.youtube.com/"
         target="_blank"
         rel="noopener noreferrer"
       >

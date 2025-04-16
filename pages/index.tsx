@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Banner from "@/components/Banner";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
+import Blogs from "@/components/Blogs";
 import LeftSide from "@/components/LeftSide";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -35,6 +36,7 @@ export default function Home() {
             <Banner />
             <About />
             <Experience />
+            <Blogs />
             <Projects /> 
             <Archive />
             <Contact />

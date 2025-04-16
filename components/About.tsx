@@ -22,23 +22,23 @@ const About = () => {
             <span className="text-textGreen">
             user-friendly, responsive web applications
             </span>  
-            {" "} that provide intuitive and seamless user experiences. 
+            {" "} and visually appealing designs that provide intuitive and seamless user experiences. 
           </p>
           <p>
           I&apos;m also experienced in {" "}
           <span className="text-textGreen"> 
-          project management
+          managing development workflows
           </span>
           {" "} and enjoy working collaboratively in 
           teams to deliver high-quality software. My goal is to leverage my technical skills 
           to develop innovative solutions and drive results.
           </p>
           <p>
-            I am passionate about learning new technologies and improving my skills in full-stack development.
+            I am passionate about learning new technologies and improving my skills in full-stack development, and enhancing my expertise in UI/UX design.
           </p>
           
           <p>Here are a few technologies I have been working with recently :</p>
-          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
+          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-3 gap-2 mt-6">
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
                 <AiFillThunderbolt />
@@ -55,7 +55,7 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              Next.js
+              Figma
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
@@ -73,6 +73,30 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
+              Canva
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Next.js
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              HTML
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Blender
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
               MongoDB
             </li>
             <li className="flex items-center gap-2">
@@ -85,7 +109,7 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              HTML
+              Prototyping
             </li>
           </ul>
         </div>
