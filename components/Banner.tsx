@@ -24,7 +24,8 @@ const Banner = () => {
         Hansi Nimnadi
         <span className="text-textDark mt-2 lgl:mt-4">
           a web developer...
-          designer...
+          <br/>
+          a designer...
         </span>
       </motion.h1>
       <motion.p
