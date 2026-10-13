@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" fill="none">
+  <rect width="1200" height="720" rx="24" fill="#0F172A"/>
+  <rect x="40" y="40" width="1120" height="640" rx="18" fill="#1E293B"/>
+  <text x="80" y="110" fill="#F8FAFC" font-family="Inter, Arial" font-size="36" font-weight="700">CloudMart</text>
+  <text x="80" y="150" fill="#94A3B8" font-family="Inter, Arial" font-size="18">Cloud-Native Microservices on AWS EKS</text>
+  <rect x="80" y="200" width="240" height="120" rx="14" fill="#334155"/>
+  <text x="100" y="250" fill="#38BDF8" font-family="Inter, Arial" font-size="16">React / Nginx</text>
+  <text x="100" y="280" fill="#CBD5E1" font-family="Inter, Arial" font-size="14">Storefront</text>
+  <rect x="340" y="200" width="240" height="120" rx="14" fill="#334155"/>
+  <text x="360" y="250" fill="#34D399" font-family="Inter, Arial" font-size="16">Node.js</text>
+  <text x="360" y="280" fill="#CBD5E1" font-family="Inter, Arial" font-size="14">API Gateway</text>
+  <rect x="600" y="200" width="240" height="120" rx="14" fill="#334155"/>
+  <text x="620" y="250" fill="#FBBF24" font-family="Inter, Arial" font-size="16">Python / Flask</text>
+  <text x="620" y="280" fill="#CBD5E1" font-family="Inter, Arial" font-size="14">Catalog &amp; Orders</text>
+  <rect x="860" y="200" width="240" height="120" rx="14" fill="#334155"/>
+  <text x="880" y="250" fill="#F97316" font-family="Inter, Arial" font-size="16">Kubernetes</text>
+  <text x="880" y="280" fill="#CBD5E1" font-family="Inter, Arial" font-size="14">Prod / Staging NS</text>
+  <rect x="80" y="360" width="1020" height="240" rx="16" fill="#0B1220" stroke="#334155"/>
+  <text x="110" y="420" fill="#F8FAFC" font-family="Inter, Arial" font-size="22" font-weight="600">AWS Elastic Kubernetes Service</text>
+  <text x="110" y="460" fill="#94A3B8" font-family="Inter, Arial" font-size="16">Auto-scaling · Network policies · Pod disruption budgets · Ingress LB</text>
+  <text x="110" y="520" fill="#38BDF8" font-family="Inter, Arial" font-size="16">AWS</text>
+  <text x="220" y="520" fill="#326CE5" font-family="Inter, Arial" font-size="16">Kubernetes</text>
+  <text x="400" y="520" fill="#2496ED" font-family="Inter, Arial" font-size="16">Docker</text>
+  <text x="530" y="520" fill="#7B42BC" font-family="Inter, Arial" font-size="16">Terraform</text>
+</svg>

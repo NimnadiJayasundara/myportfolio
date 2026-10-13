@@ -54,8 +54,8 @@ const Navbar = () => {
         </Link>
         {/* ============ Logo End here ============== */}
         {/* ============ ListItem Start here ======== */}
-        <div className="hidden mdl:inline-flex items-center gap-7">
-          <ul className="flex text-[13px] gap-7">
+        <div className="hidden mdl:inline-flex items-center gap-5">
+          <ul className="flex text-[13px] gap-5">
             <Link
               className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
               href="#home"
@@ -100,7 +100,7 @@ const Navbar = () => {
             </Link>
             <Link
               className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
-              href="#project"
+              href="#research"
               onClick={handleScroll}
             >
               <motion.li
@@ -108,8 +108,33 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.3 }}
               >
-                <span className="text-textGreen"></span>
+                Research
+              </motion.li>
+            </Link>
+            <Link
+              className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
+              href="#project"
+              onClick={handleScroll}
+            >
+              <motion.li
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.1, delay: 0.35 }}
+              >
                 Project
+              </motion.li>
+            </Link>
+            <Link
+              className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
+              href="#certifications"
+              onClick={handleScroll}
+            >
+              <motion.li
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.1, delay: 0.4 }}
+              >
+                Certifications
               </motion.li>
             </Link>
             <Link
@@ -211,7 +236,7 @@ const Navbar = () => {
                   </Link>
                   <Link
                     className="flex items-center gap-1 font-medium text-white hover:text-textGreen cursor-pointer duration-300 nav-link"
-                    href="#project"
+                    href="#research"
                     onClick={handleScroll}
                   >
                     <motion.li
@@ -219,8 +244,36 @@ const Navbar = () => {
                       animate={{ x: 0, opacity: 1 }}
                       transition={{ duration: 0.2, delay: 0.4, ease: "easeIn" }}
                     >
-                      <span className="text-textGreen">03.</span>
+                      <span className="text-textGreen">04.</span>
+                      Research
+                    </motion.li>
+                  </Link>
+                  <Link
+                    className="flex items-center gap-1 font-medium text-white hover:text-textGreen cursor-pointer duration-300 nav-link"
+                    href="#project"
+                    onClick={handleScroll}
+                  >
+                    <motion.li
+                      initial={{ x: 20, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 0.2, delay: 0.45, ease: "easeIn" }}
+                    >
+                      <span className="text-textGreen">05.</span>
                       Project
+                    </motion.li>
+                  </Link>
+                  <Link
+                    className="flex items-center gap-1 font-medium text-white hover:text-textGreen cursor-pointer duration-300 nav-link"
+                    href="#certifications"
+                    onClick={handleScroll}
+                  >
+                    <motion.li
+                      initial={{ x: 20, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ duration: 0.2, delay: 0.5, ease: "easeIn" }}
+                    >
+                      <span className="text-textGreen">06.</span>
+                      Certifications
                     </motion.li>
                   </Link>
                   <Link
@@ -231,9 +284,9 @@ const Navbar = () => {
                     <motion.li
                       initial={{ x: 20, opacity: 0 }}
                       animate={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.2, delay: 0.5, ease: "easeIn" }}
+                      transition={{ duration: 0.2, delay: 0.55, ease: "easeIn" }}
                     >
-                      <span className="text-textGreen">04.</span>
+                      <span className="text-textGreen">07.</span>
                       Contact
                     </motion.li>
                   </Link>

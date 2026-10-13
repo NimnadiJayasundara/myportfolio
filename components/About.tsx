@@ -22,7 +22,10 @@ const About = () => {
             <span className="text-textGreen">
             user-friendly, responsive web applications
             </span>  
-            {" "} and visually appealing designs that provide intuitive and seamless user experiences. 
+            {" "} and visually appealing designs that provide intuitive and seamless user experiences.
+            I recently completed a Trainee Quality Assurance Engineer internship at{" "}
+            <span className="text-textGreen">IFS R&amp;D International</span>,
+            focusing on automation and manual testing across Windows, Android, iOS, and MAUI applications. 
           </p>
           <p>
           I&apos;m also experienced in {" "}

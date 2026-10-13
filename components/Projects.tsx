@@ -44,7 +44,7 @@ const Projects = () => {
 
   return (
     <section id="project" className="max-w-container mx-auto lgl:px-20 py-24">
-      <SectionTitle title="Some Things I have Built" titleNo="03" />
+      <SectionTitle title="Some Things I have Built" titleNo="05" />
 
       {/* Project Container with Staggered Animation */}
       <motion.div
@@ -52,10 +52,56 @@ const Projects = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.05 }}
       >
-        {/* Project One */}
+        {/* CloudMart */}
         <motion.div className="flex flex-col xl:flex-row gap-6" variants={cardVariants}>
+          <motion.a
+            className="w-full xl:w-1/2 h-auto relative group"
+            href=""
+            variants={imageVariants}
+            whileHover="hover"
+          >
+            <motion.div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                className="w-full h-auto object-contain rounded-lg bg-[#0F172A]"
+                src="/assets/images/cloudmart.svg"
+                alt="CloudMart cloud-native microservices platform"
+              />
+            </motion.div>
+          </motion.a>
+          <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
+            <div>
+              <p className="font-titleFont text-textGreen text-sm tracking-wide">
+                Group Project
+              </p>
+              <h3 className="text-2xl font-bold">
+                CloudMart — Cloud-Native Microservices Platform
+              </h3>
+            </div>
+            <p className="bg-[#ff8639] text-sm md:text-base p-2 md:p-6 rounded-md text-bodyColor">
+              Designed and deployed a multi-service e-commerce application on{" "}
+              <span className="text-[#092850]">
+                AWS Elastic Kubernetes Service (EKS)
+              </span>{" "}
+              as part of a 6-member cloud engineering team. Provisioned and
+              managed a production Kubernetes cluster with auto-scaling, network
+              security policies, pod disruption budgets, and Ingress-based load
+              balancing. Deployed all 5 microservices (Python/Flask, Node.js,
+              React/Nginx) across isolated production and staging namespaces.
+            </p>
+            <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
+              <li>AWS</li>
+              <li>Kubernetes</li>
+              <li>Docker</li>
+              <li>Terraform</li>
+            </ul>
+          </div>
+        </motion.div>
+
+        {/* Project One */}
+        <motion.div className="flex flex-col xl:flex-row-reverse gap-6" variants={cardVariants}>
           <motion.a
             className="w-full xl:w-1/2 h-auto relative group"
             href="" // Add the project link here
@@ -146,7 +192,7 @@ const Projects = () => {
         </motion.div>
 
         {/* Project Two */}
-        <motion.div className="flex flex-col xl:flex-row-reverse gap-6" variants={cardVariants}>
+        <motion.div className="flex flex-col xl:flex-row gap-6" variants={cardVariants}>
           <motion.a
             className="w-full xl:w-1/2 h-auto relative group"
             href="https://imsfrontend.vercel.app/" // Replace with actual project link
@@ -173,7 +219,7 @@ const Projects = () => {
               </p>
               <h3 className="text-2xl font-bold">Intern Management System</h3>
             </div>
-            <p className="bg-[#ff8639] text-sm md:text-base p-2 xl:-mr-16 md:p-6 rounded-md text-bodyColor">
+            <p className="bg-[#ff8639] text-sm md:text-base p-2 md:p-6 rounded-md text-bodyColor">
               Second year (2023 - 2024) software project mentored by <span className="text-[#092850]">99X</span>.
               This focuses on developing a platform that enables companies to {" "}
               <span className="text-[#092850]">effectively manage their interns</span>.
@@ -218,7 +264,7 @@ const Projects = () => {
         </motion.div>
 
         {/* Project Three */}
-        <motion.div className="flex flex-col xl:flex-row gap-6" variants={cardVariants}>
+        <motion.div className="flex flex-col xl:flex-row-reverse gap-6" variants={cardVariants}>
           <motion.a
             className="w-full xl:w-1/2 h-auto relative group"
             href="" // Add the project link here
