@@ -13,7 +13,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="text-lg font-titleFont tracking-wide text-textGreen"
       >
-        Hi, I'm 
+        Hi, I&apos;m
       </motion.h3>
       <motion.h1
         initial={{ y: 10, opacity: 0 }}
