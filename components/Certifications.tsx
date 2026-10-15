@@ -10,6 +10,7 @@ const certifications = [
     description:
       "Foundation-level software testing certification covering test design, STLC, and quality practices.",
     icon: FaAward,
+    pdf: "/assets/ISTQB_CTFL.pdf",
   },
   {
     title: "Test Automation in DevOps",
@@ -17,6 +18,7 @@ const certifications = [
     description:
       "Continuous testing in CI/CD pipelines, integrating automated checks into DevOps workflows.",
     icon: FaCertificate,
+    pdf: "/assets/Automation in DevOps.pdf",
   },
   {
     title: "The Whole Team Approach to Continuous Testing",
@@ -24,6 +26,7 @@ const certifications = [
     description:
       "Collaborative quality ownership across developers, testers, and product teams.",
     icon: MdScience,
+    pdf: "/assets/The Whole Team Approach to CT.pdf",
   },
   {
     title: "TensorFlow for Beginners",
@@ -31,6 +34,7 @@ const certifications = [
     description:
       "Introductory machine learning with TensorFlow, covering model basics and practical workflows.",
     icon: SiTensorflow,
+    pdf: "/assets/Tensorflow for Beginners.pdf",
   },
   {
     title: "Introduction to Kubernetes",
@@ -38,6 +42,7 @@ const certifications = [
     description:
       "Core Kubernetes concepts including pods, deployments, services, and cluster operations.",
     icon: SiKubernetes,
+    pdf: "/assets/Introduction to Kubernetes.pdf",
   },
 ];
 
@@ -49,27 +54,44 @@ const Certifications = () => {
     >
       <SectionTitle title="Certifications" titleNo="06" />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10">
-        {certifications.map((cert) => {
-          const Icon = cert.icon;
-          return (
-            <article
-              key={cert.title}
-              className="rounded-lg bg-[#112240] p-7 flex flex-col gap-4 hover:-translate-y-2 transition-transform duration-300"
-            >
-              <div className="w-12 h-12 rounded-md bg-hoverColor text-textGreen flex items-center justify-center text-2xl">
-                <Icon />
-              </div>
-              <h3 className="text-lg text-bodyColor font-titleFont font-semibold leading-snug">
-                {cert.title}
-              </h3>
-              <p className="text-textGreen text-sm">{cert.issuer}</p>
-              <p className="text-sm text-bodyColor/90">{cert.description}</p>
-            </article>
-          );
-        })}
-      </div>
-    </section>
-  );
-};
+          {certifications.map((cert) => {
+            const Icon = cert.icon;
+
+            return (
+              <a
+                key={cert.title}
+                href={cert.pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`View ${cert.title} certificate (opens in a new tab)`}
+                className="rounded-lg bg-[#112240] p-7 flex flex-col gap-4 hover:-translate-y-2 hover:bg-[#172f50] transition-all duration-300 cursor-pointer"
+              >
+                <div className="w-12 h-12 rounded-md bg-hoverColor text-textGreen flex items-center justify-center text-2xl">
+                  <Icon />
+                </div>
+
+                <h3 className="text-lg text-bodyColor font-titleFont font-semibold leading-snug">
+                  {cert.title}
+                </h3>
+
+                <p className="text-textGreen text-sm">
+                  {cert.issuer}
+                </p>
+
+                <p className="text-sm text-bodyColor/90">
+                  {cert.description}
+                </p>
+
+                <span className="text-textGreen text-sm mt-auto">
+                  View Certificate ↗
+                </span>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+
+      );
+      };
 
 export default Certifications;

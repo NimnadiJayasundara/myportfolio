@@ -1,6 +1,6 @@
 // File: components/Projects.js
 
-import { interfaceImg, interface2Img, interface3Img } from "@/public/assets";
+import { interfaceImg, interface2Img, interface3Img, interface4Img } from "@/public/assets";
 import Image from "next/image";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { TbBrandFigma } from "react-icons/tb";
@@ -64,10 +64,17 @@ const Projects = () => {
           >
             <motion.div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              {/* <img
                 className="w-full h-auto object-contain rounded-lg bg-[#0F172A]"
-                src="/assets/images/cloudmart.svg"
+                src={interface4Img}
                 alt="CloudMart cloud-native microservices platform"
+              /> */}
+              <Image
+                className="w-full h-full object-contain"
+                src={interface4Img}
+                alt="CloudMart cloud-native microservices platform"
+                layout="responsive"
+                priority
               />
             </motion.div>
           </motion.a>

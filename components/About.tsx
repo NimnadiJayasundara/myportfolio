@@ -19,26 +19,28 @@ const About = () => {
             </span> 
             {" "} I have a strong foundation in both front-end and back-end development,
             with a passion for creating {" "}
-            <span className="text-textGreen">
+            {/* <span className="text-textGreen"> */}
             user-friendly, responsive web applications
-            </span>  
+            {/* </span>   */}
             {" "} and visually appealing designs that provide intuitive and seamless user experiences.
-            I recently completed a Trainee Quality Assurance Engineer internship at{" "}
+            </p>
+            <p>
+            I recently completed a Trainee Software Engineer Quality Assurance internship at{" "}
             <span className="text-textGreen">IFS R&amp;D International</span>,
             focusing on automation and manual testing across Windows, Android, iOS, and MAUI applications. 
           </p>
           <p>
           I&apos;m also experienced in {" "}
-          <span className="text-textGreen"> 
+          {/* <span className="text-textGreen">  */}
           managing development workflows
-          </span>
+          {/* </span> */}
           {" "} and enjoy working collaboratively in 
           teams to deliver high-quality software. My goal is to leverage my technical skills 
           to develop innovative solutions and drive results.
           </p>
-          <p>
+          {/* <p>
             I am passionate about learning new technologies and improving my skills in full-stack development, and enhancing my expertise in UI/UX design.
-          </p>
+          </p> */}
           
           <p>Here are a few technologies I have been working with recently :</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-3 gap-2 mt-6">
@@ -46,7 +48,61 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              React 
+              Selenium 
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Katalon Studio 
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Playwright 
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Cypress
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Apache JMeter 
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Swagger UI
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Postman
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Javascript 
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Python 
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              React
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
@@ -58,43 +114,7 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              Figma
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Express.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Javascript
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Canva
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Next.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              HTML
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              Blender
+              Jenkins
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
@@ -106,13 +126,31 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              Tailwindcss
+              MySQL
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              Prototyping
+              MS SQL Server
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Kubernetes
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              AWS
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              Microsoft Azure
             </li>
           </ul>
         </div>

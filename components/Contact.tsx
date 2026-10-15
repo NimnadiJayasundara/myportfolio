@@ -68,7 +68,7 @@ const Contact = () => {
               </p>
               <div>
               <p>
-                <span className="font-semibold text-textGreen">Email : </span> nimnadijayasundara12@gmail.com
+                <span className="font-semibold text-textGreen">Email : </span> contact.hansinimnadi@gmail.com
               </p>
               </div>
             </div>
@@ -124,7 +124,7 @@ const Contact = () => {
         </div>
       </div>
       <footer className="text-center mt-8">
-        <p>© 2025 | Hansi Nimnadi</p>
+        <p>© 2026 | Hansi Nimnadi</p>
         <div className="flex justify-center mt-4">
           <Image className="w-64" src={logo} alt="logo" />
         </div>
