@@ -4,6 +4,11 @@ import Image from "next/image";
 import company from "../public/assets/images/company.png";
 import company4 from "../public/assets/images/company4.png";
 import company5 from "../public/assets/images/company5.png";
+import ifsSportsDay1 from "../public/assets/images/ifsSportsDay1.jpg";
+import ifsSportsDay2 from "../public/assets/images/ifsSportsDay2.jpg";
+import ifsSportsDay3 from "../public/assets/images/ifsSportsDay3.jpg";
+import mwfmCrsDay1 from "../public/assets/images/mwfmCrsDay1.jpg";
+import mwfmCrsDay2 from "../public/assets/images/mwfmCrsDay2.jpg";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -12,6 +17,41 @@ const Archive = () => {
   const [showMore, setShowMore] = useState(false);
 
   const cards = [
+    {
+      title: "IFS Table Tennis Team 2025",
+      des: "Proud to stand with the IFS Table Tennis team in our kit at Sports Day. Being a team member strengthened connections with colleagues and showed how collaboration and a positive mindset carry from the office onto the court.",
+      listItem: ["Tabel Tennis", "Sports Day"],
+      link: "#",
+      image: ifsSportsDay3,
+    },
+    {
+      title: "IFS Sports Day – Table Tennis Team Member",
+      des: "Represented IFS R&D International as a Table Tennis team member at IFS Sports Day. It was a memorable chance to compete alongside colleagues, enjoy the matches, and be part of the wider IFS sports community beyond work.",
+      listItem: ["IFS Sports Day", "Table Tennis"],
+      link: "#",
+      image: ifsSportsDay1,
+    },
+    {
+      title: "On Court with the IFS Earth Kingdom Team Squad",
+      des: "Joined the IFS Table Tennis team on court during Sports Day, sharing the energy of the games and supporting one another as we represented the company. The day highlighted teamwork, sportsmanship, and the fun of competing together.",
+      listItem: ["Team Earth", "IFS"],
+      link: "#",
+      image: ifsSportsDay2,
+    },
+    {
+      title: "MWFM CRS Day – Matara Beach Clean 2025",
+      des: "Took part in MWFM CRS Day at the Matara Beach Clean 2025 with IFS Service and Asset Management, Utilities WFM Team Sri Lanka. The day brought the team together to give back to the community, care for the coastline, and spend time beyond day-to-day work.",
+      listItem: ["MWFM CRS Day", "Matara Beach Clean 2025"],
+      link: "#",
+      image: mwfmCrsDay1,
+    },
+    {
+      title: "IFS Utilities WFM Team – Service & Asset Management",
+      des: "Joined colleagues from IFS Service and Asset Management, Utilities WFM Team Sri Lanka, for a beach clean at Matara. It was a meaningful CRS activity that strengthened team bonds while contributing to a cleaner, more sustainable local environment.",
+      listItem: ["IFS MWFM", "Sri Lanka"],
+      link: "#",
+      image: mwfmCrsDay2,
+    },
     {
       title: "Understanding Software Firm Functions",
       des: "This involves gaining insights into their approach to developing and deploying software solutions, focusing on innovation, and addressing industry-specific needs and challenges through technology. We had the opportunity to work with Sysco Labs at Level 1.",
@@ -44,7 +84,7 @@ const Archive = () => {
   };
 
   return (
-    <div className="max-w-contentContainer mx-auto px-4 py-">
+    <div id="archive" className="max-w-contentContainer mx-auto px-4 py-10">
       <div className="w-full flex flex-col items-center">
         <h2 className="text-3xl font-titleFont font-semibold">
           Other Noteworthy Activities
